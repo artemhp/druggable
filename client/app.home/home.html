@@ -1,0 +1,15 @@
+<div ng-if="!$ctrl.info.img" class="alert alert-danger" role="alert">
+  Don't Forget to randomize your first image.
+  <button class="btn btn-default" ng-click="$ctrl.changeImage()">Random Image</button>
+</div>
+<div ng-if="$ctrl.info.img" class="alert alert-success" role="alert">
+  You can randomize image in any time.
+  <button class="btn btn-default" ng-click="$ctrl.changeImage()">Random Image</button>
+</div>
+<div>
+  <span ng-if="$ctrl.info.name" class="name" coordinates="$ctrl.info.nameCoordinate" save="'nameCoordinate'" draggable>
+    {{$ctrl.info.name}}
+  </span>
+  <img ng-if="$ctrl.info.img" class="thumbnail" coordinates="$ctrl.info.imgCoordinate" save="'imgCoordinate'" draggable src="{{$ctrl.info.img}}"
+  />
+</div>

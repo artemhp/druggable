@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html data-ng-app="app">
+
+<head>
+  <base href="/">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+  <title data-ng-bind="title">STMS - Homework</title>
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <style>
+    .name {
+      font-family: 'Lobster', cursive;
+      font-size: 45px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <app></app>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="https://unpkg.com/@angular/router@0.2.0/angular1/angular_1_router.js"></script>
+
+  <script src="app/app.module.js"></script>
+  <script src="app/app.config.js"></script>
+  <script src="app/app.component.js"></script>
+  <script src="app/app.status.value.js"></script>
+  <script src="app/app.data.service.js"></script>
+
+  <script src="app.auth/app.auth.module.js"></script>
+  <script src="app.auth/app.auth.service.js"></script>
+
+  <script src="app.auth/app.login/login.module.js"></script>
+  <script src="app.auth/app.login/login.component.js"></script>
+
+  <script src="app.auth/app.logout/logout.module.js"></script>
+  <script src="app.auth/app.logout/logout.component.js"></script>
+
+  <script src="app.druggable/druggable.module.js"></script>
+  <script src="app.druggable/druggable.directive.js"></script>
+
+  <script src="app.home/home.module.js"></script>
+  <script src="app.home/home.component.js"></script>
+  <script src="app.home/home.service.js"></script>
+
+</body>
+
+</html>
